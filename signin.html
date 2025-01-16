@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link id="style" rel="stylesheet" href="../CSS/light.css">
+        <title>Sign In</title>
+    </head>
+    <body>
+        <script src="data.js"></script>
+        <script>
+            let data = userData;
+            let x = document.getElementById("signForm");
+            function formSub(e) {
+                let y = document.getElementById("sign");
+                let u = document.getElementById("user");
+                let p = document.getElementById("pwd");
+                if (u.value==data.user && p.value==data.pass) {
+                    sessionStorage.setItem("signed", "true");
+                    window.location.assign("index.html");
+                } else {
+                    sessionStorage.setItem("signed", "false");
+                    y.innerHTML = "Invalid Details";
+                }
+            }
+            x.addEventListener('submit', formSub);
+        </script>
+        <h1>Admin Sign In</h1>
+        <button id="d/l" onclick="darkbutton()">Dark Mode</button>
+        <div class="upper">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="middle">
+            <form id="signForm" name="sf">
+                <label for="username">Username:</label><br>
+                <input type="text" id="user" name="user"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+                <button type="button" onclick="formSub()">Sign In</button>
+            </form>
+            <p id="sign">Enter Information</p>
+        </div>
+        <script>
+            dark();
+        </script>
+    </body>
+</html>

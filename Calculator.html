@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link id="style" rel="stylesheet" href="../CSS/light.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <script src="../data.js"></script>
+        <h1>Java Calculator</h1>
+        <button id="d/l" onclick="darkbutton()">Dark Mode</button>
+        <div class="upper">
+            <a href="../index.html">Home</a>
+        </div>
+        <div class="middle">
+            <h2>Calculator</h2>
+            <iframe width="850" height="500" src="https://codehs.com/sandbox/hunterslimeg/calculator/embed/?display_mode=displayOnly&show_file_tree=False" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+            <h2>Documentation</h2>
+            <p>Name: Command(s); Description (Details).</p>
+            <a href="#T1">Basic Operations</a>
+            <a href="#T2">Exponents</a>
+            <a href="#T3">Unit Conversion</a>
+            <a href="#T4">Algebra</a>
+            <a href="#T5">Geometry</a>
+            <br>
+            <p>
+            <h3>System</h3>
+            Clear Output: Clear; Removes all outputted lines (clears and restarts).
+            <h3 id="T1">Basic Operations</h3>
+            Addition: Add; Intakes two numbers (decimal optional).<br>
+            Subtraction: Subtract; Intakes two numbers (decimal optional).<br>
+            Multiplication: Multiply; Intakes two numbers (decimal optional).<br>
+            Division: Divide; Intakes two numbers (decimal optional).<br>
+            <h3 id="T2">Exponents</h3>
+            Exponents: Exponent; Intakes the base and power (in that order).<br>
+            Roots: Radical; Intakes the base and power (in that order).<br>
+            <h3 id="T3">Unit Conversion</h3>
+            <a href="#T3.1">Decimals/Fractions</a>
+            <a href="#T3.2">Imperial</a>
+            <a href="#T3.3">Metric</a>
+            <a href="#T3.4">Misc</a>
+            <h4 id="T3.1">Decimals/Fractions</h4>
+            Decimal to Fraction: Convert Decimal to Fraction; Intakes the decimal (fraction returns with added .0).<br>
+            Fraction to Decimal: Convert Fraction to Decimal; Intakes the fraction (numerator "/" denominator).<br>
+            <h4 id="T3.2">Imperial</h4>
+            Distance: Convert Time; Intakes the value, the starting units, and the target units (Inches, Feet, Yards, Miles).<br>
+            <h4 id="T3.3">Metric</h4>
+            <h4 id="T3.4">Misc</h4>
+            Time: Convert Time; Intakes the value, the starting units, and the target units (Hours, Minutes, Seconds).<br>
+            <h3 id="T4">Algebra</h3>
+            <a href="#T4.1">Single Variable Equations</a>
+            <a href="#T4.2">Multiple Variable Equations</a>
+            <h4 id="T4.1">Single Variable Equations</h4>
+            Standard Form: Standard 1 Variable; Intakes the equation (outputs an equation).<br>
+            Solving: Solve 1 Variable; Intakes the equation (outputs x="value").<br>
+            <h4 id="T4.2">Multiple Variable Eauations</h4>
+            Standard Form: Standard Form 2 Variables; Intakes the equation (outputs an equation).<br>
+            Slope-Intecept Form: Slope Intercept Form; Intakes the equation (outputs an equation).<br>
+            <!--Solving: Solve 2 Variables; Intakes the equation (outputs x="value", y="value").<br>--->
+            <h3 id="T5">Geometry</h3>
+            <a href="#T5.1">Polygons</a>
+            <a href="#T5.2">Quadrilaterals</a>
+            <a href="#T5.3">Triangles</a>
+            <a href="#T5.4">Circles</a>
+            <a href="#T5.5">3-Dimensional Objects</a>
+            <h4 id="T5.1">Polygons</h4>
+            Interior Angle Sum: Polygon > Interior Sum; Intakes the number of sides (outputs angle as double).<br>
+            Interior Angle Part: Polygon > Interior Part; Intakes the number of sides (outputs angle as double).<br>
+            Exterior Angle Part: Polygon > Exterior Part; Intakes the number of sides (outputs angle as double).<br>
+            Sides from Interior Angle: Polygon > Interior Part Converse; Intakes the angle measure (outputs number of sides).<br>
+            Sides from Exterior Angle: Polygon > Exterior Part Converse; Intakes the angle measure (outputs number of sides).<br>
+            <h4 id="T5.2">Quadrilaterals</h4>
+            Rectangle Area: Area > Rectangle; Intakes the length and width (outputs and inputs as doubles).<br>
+            Rectangle Perimeter: Perimeter > Rectangle; Intakes the length and width (outputs and inputs as doubles).<br>
+            Trapezoid Area: Area > Trapezoid; Intakes the height, first base, and second base (outputs and inputs as doubles).<br>
+            Trapezoid Perimeter: Perimeter > Trapezoid; Intakes the four side lengths (outputs and inputs as doubles).<br>
+            <h4 id="T5.3">Triangles</h4>
+            Triangle Area: Area > Triangle; Intakes the height and base (outputs and inputs as doubles).<br>
+            Triangle Perimeter: Perimeter > Triangle; Intakes the 3 side lengths (outputs and inputs as doubles).<br>
+            <h4 id="T5.4">Circles</h4>
+            Circle Area: Area > Circle; Intakes the radius (outputs and inputs as doubles).<br>
+            Circle Circumference: Perimeter > Circle; Intakes the radius (circumference is under perimeter).<br>
+            <h4 id="T5.5">3-Dimensional Objects</h4>
+            Rectangular Volume: Volume > Rectangular Prism; Intakes the length, width, and height (outputs and inputs as doubles).<br>
+            Triangular Volume: Volume > Triangular Prism; Intakes the height, base, and depth (outputs and inputs as doubles).<br>
+            Pyramid Volume: Volume > Pyramid; Intakes the length, width, and height (outputs and inputs as doubles).<br>
+            Sphere Volume: Volume > Sphere; Intakes the radius (outputs and inputs as doubles).<br>
+            </p>
+        </div>
+        <script>
+            dark();
+        </script>
+    </body>
+</html
