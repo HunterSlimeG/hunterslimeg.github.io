@@ -1,4 +1,4 @@
-let userData = {"user": "Admin", "pass": "Test123"};
+/*let userData = {"user": "Admin", "pass": "Test123"};
 function sign() {
     let sl = document.getElementById("admin");
     let sign = sessionStorage.getItem("signed");
@@ -7,7 +7,7 @@ function sign() {
     } else {
         sl.innerHTML = "Admin Sign In";
     }
-}
+}*/
 function dark() {
     let button = document.getElementById("d/l");
     let theme = document.getElementById("style");
@@ -34,6 +34,6 @@ function darkbutton() {
     dark();
 }
 function load() {
-    sign();
+    //sign();
     dark();
 }
