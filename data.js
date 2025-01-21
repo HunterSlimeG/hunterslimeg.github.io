@@ -8,19 +8,19 @@ function sign() {
         sl.innerHTML = "Admin Sign In";
     }
 }*/
-function dark() {
+function dark(dir) {
     let button = document.getElementById("d/l");
     let theme = document.getElementById("style");
     let mode = localStorage.mode;
     if (mode==="dark") {
-        theme.href = "../CSS/dark.css";
+        theme.href = dir+"/dark.css";
         button.innerHTML = "Light Mode";
     } else {
-        theme.href = "../CSS/light.css";
+        theme.href = dir+"/light.css";
         button.innerHTML = "Dark Mode";
     }
 }
-function darkbutton() {
+function darkbutton(dire) {
     let button = document.getElementById("d/l");
     let theme = document.getElementById("style");
     let mode = localStorage.mode;
@@ -31,9 +31,9 @@ function darkbutton() {
         localStorage.mode = "dark";
         button.innerHTML = "Light Mode";
     }
-    dark();
+    dark(dire);
 }
 function load() {
     //sign();
-    dark();
+    dark("");
 }
