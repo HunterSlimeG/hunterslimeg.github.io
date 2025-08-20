@@ -19,3 +19,6 @@ button {
     background: gray;
     border-radius: 12px;
 }
+.warn {
+    color: crimson;
+}
