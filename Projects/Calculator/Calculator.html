@@ -7,7 +7,59 @@
     </head>
     <body>
         <script src="../../data.js"></script>
-        <script src="../calculator.js"></script>
+        <script src="calculator.js"></script>
+        <script>
+            function formSub(e) {
+                let p = document.getElementById("out");
+                let op = document.getElementById("op").value.trim();
+                let inp = document.getElementById("in").value;
+                let result = "";
+                if (op=="+") {
+                    let nums = inp.split(",");
+                    for (let i = 0; i<nums.length; i++) {
+                        nums[i] = Number(nums[i]);
+                    }
+                    result = add(nums);
+                } else if (op=="-") {
+                    let nums = inp.split(",");
+                    for (let i = 0; i<nums.length; i++) {
+                        nums[i] = Number(nums[i]);
+                    }
+                    result = subtract(nums);
+                } else if (op=="*") {
+                    let nums = inp.split(",");
+                    for (let i = 0; i<nums.length; i++) {
+                        nums[i] = Number(nums[i]);
+                    }
+                    result = multiply(nums);
+                } else if (op=="/") {
+                    let nums = inp.split(",");
+                    for (let i = 0; i<nums.length; i++) {
+                        nums[i] = Number(nums[i]);
+                    }
+                    result = divide(nums);
+                } else if (op=="^") {
+                    let nums = inp.split(",");
+                    for (let i = 0; i<nums.length; i++) {
+                        nums[i] = Number(nums[i]);
+                    }
+                    result = power(nums[0], nums[1]);
+                } else {
+                    result = "Invalid Operation";
+                }
+                p.innerHTML = result+"<br>"+p.innerHTML;
+            }
+            function clearForm(full) {
+                let form = document.getElementById("calc");
+                let p = document.getElementById("out");
+                if (full) {
+                    p.innerHTML = " ";
+                } else {
+                    form.reset();
+                }
+            }
+            //x.addEventListener('submit', formSub);
+        </script>
         <h1>Java Calculator</h1>
         <button id="d/l" onclick="darkbutton('../../CSS')">Dark Mode</button>
         <div class="upper">
@@ -16,58 +68,6 @@
         <div class="middle">
             <h3 class="warn">UNDER CONSTRUCTION</h3>
             <h2>Calculator</h2>
-            <script>
-                function formSub(e) {
-                    let p = document.getElementById("out");
-                    let op = document.getElementById("op").value.trim();
-                    let inp = document.getElementById("in").value;
-                    let result = "";
-                    if (op=="+") {
-                        let nums = inp.split(",");
-                        for (let i = 0; i<nums.length; i++) {
-                            nums[i] = Number(nums[i]);
-                        }
-                        result = add(nums);
-                    } else if (op=="-") {
-                        let nums = inp.split(",");
-                        for (let i = 0; i<nums.length; i++) {
-                            nums[i] = Number(nums[i]);
-                        }
-                        result = subtract(nums);
-                    } else if (op=="*") {
-                        let nums = inp.split(",");
-                        for (let i = 0; i<nums.length; i++) {
-                            nums[i] = Number(nums[i]);
-                        }
-                        result = multiply(nums);
-                    } else if (op=="/") {
-                        let nums = inp.split(",");
-                        for (let i = 0; i<nums.length; i++) {
-                            nums[i] = Number(nums[i]);
-                        }
-                        result = divide(nums);
-                    } else if (op=="^") {
-                        let nums = inp.split(",");
-                        for (let i = 0; i<nums.length; i++) {
-                            nums[i] = Number(nums[i]);
-                        }
-                        result = power(nums[0], nums[1]);
-                    } else {
-                        result = "Invalid Operation";
-                    }
-                    p.innerHTML = result+"<br>"+p.innerHTML;
-                }
-                function clearForm(full) {
-                    let form = document.getElementById("calc");
-                    let p = document.getElementById("out");
-                    if (full) {
-                        p.innerHTML = " ";
-                    } else {
-                        form.reset();
-                    }
-                }
-                //x.addEventListener('submit', formSub);
-            </script>
             <form id="calc">
                 <button type="button" onclick="clearForm(false)">Clear Input</button><br>
                 <label for="op">Operation:</label><br>
