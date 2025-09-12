@@ -97,4 +97,17 @@ function solve1Var(e) {
     }
     return 0;
 }
+
+//Converson
+//    Binary
+function decimalToBinary(nums) {
+    let bins = [];
+    let bits = 16;
+    for (let i = 0; i < nums.length; i++) {
+        let val = "";
+        
+        bins[i] = val;
+    }
+    return bins;
+}
 //console.log(solve1Var("2x = 100"));
