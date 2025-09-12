@@ -107,14 +107,14 @@ function decimalToBinary(nums) {
         let val = "";
         let num = nums[i];
         for (let j = bits; j > 0; j--) {
-            if (num>=j) {
+            if (num>=2**(j-1) && num>0) {
                 val += "1";
-            } else {
+                num -= 2**(j-1);
+            } else if (val!="" || j==1) {
                 val += "0";
             }
-            num -= j;
         }
-        bins[i] = val;
+        bins[i] = Number(val);
     }
     return bins;
 }
