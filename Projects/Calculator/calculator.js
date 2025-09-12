@@ -105,7 +105,15 @@ function decimalToBinary(nums) {
     let bits = 16;
     for (let i = 0; i < nums.length; i++) {
         let val = "";
-        
+        let num = nums[i];
+        for (let j = bits; j > 0; j--) {
+            if (num>=j) {
+                val += "1";
+            } else {
+                val += "0";
+            }
+            num -= j;
+        }
         bins[i] = val;
     }
     return bins;
