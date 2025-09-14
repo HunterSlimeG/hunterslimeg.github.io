@@ -116,6 +116,6 @@ function decimalToBinary(nums) {
         }
         bins[i] = val;
     }
-    return = bins.join(", ");
+    return bins.join(", ");
 }
 //console.log(solve1Var("2x = 100"));
