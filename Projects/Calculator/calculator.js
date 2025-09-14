@@ -118,4 +118,4 @@ function decimalToBinary(nums) {
     }
     return bins.join(", ");
 }
-//console.log(solve1Var("2x = 100"));
+//console.log(decimalToBinary([10, 11]))
