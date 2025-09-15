@@ -118,4 +118,4 @@ function decimalToBinary(nums) {
     }
     return bins.join(", ");
 }
-//console.log(decimalToBinary([10, 11]))
+console.log(decimalToBinary([10, 11]))
