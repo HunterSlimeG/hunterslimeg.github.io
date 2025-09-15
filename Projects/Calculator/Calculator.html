@@ -50,6 +50,9 @@
                         nums[i] = Number(nums[i]);
                     }
                     result = decimalToBinary(nums);
+                } else if (op=="To Deci") {
+                    let bins = inp.split(",");
+                    result = binaryToDecimal(bins); 
                 } else {
                     result = "Invalid Operation";
                 }
