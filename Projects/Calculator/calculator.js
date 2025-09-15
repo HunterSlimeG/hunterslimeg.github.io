@@ -118,3 +118,20 @@ function decimalToBinary(nums) {
     }
     return bins.join(", ");
 }
+function binaryToDecimal(bins) {
+    let nums = [];
+    let bits = 32;
+    for (let i = 0; i < nums.length; i++) {
+        let val = 0;
+        let bin = bins[i];
+        for (let j = bits; j > 0; j--) {
+            if (bin[j-1]==1) {
+                val += 2**(j-1);
+            } else {
+                val += 0;
+            }
+        }
+        nums[i] = val;
+    }
+    return nums.join(", ");
+}
