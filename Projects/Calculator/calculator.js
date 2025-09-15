@@ -121,7 +121,7 @@ function decimalToBinary(nums) {
 function binaryToDecimal(bins) {
     let nums = [];
     let bits = 32;
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < bins.length; i++) {
         let val = 0;
         let bin = bins[i];
         for (let j = bits; j > 0; j--) {
