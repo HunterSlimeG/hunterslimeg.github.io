@@ -123,7 +123,7 @@ function binaryToDecimal(bins) {
     let bits = 32;
     for (let i = 0; i < bins.length; i++) {
         let val = 0;
-        let bin = bins[i];
+        let bin = bins[i].split('').reverse().join('');
         for (let j = bits; j > 0; j--) {
             if (bin[j-1]==1) {
                 val += 2**(j-1);
