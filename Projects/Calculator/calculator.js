@@ -102,7 +102,7 @@ function solve1Var(e) {
 //    Binary
 function decimalToBinary(nums) {
     let bins = [];
-    let bits = 16;
+    let bits = 32;
     for (let i = 0; i < nums.length; i++) {
         let val = "";
         let num = nums[i];
