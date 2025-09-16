@@ -11,7 +11,7 @@
         <script>
             function formSub(e) {
                 let p = document.getElementById("out");
-                let op = document.getElementById("op").value.trim();
+                let op = document.getElementById("op").value.trim().toLowerCase();
                 let inp = document.getElementById("in").value;
                 let result = "";
                 if (op=="+") {
@@ -44,13 +44,13 @@
                         nums[i] = Number(nums[i]);
                     }
                     result = power(nums[0], nums[1]);
-                } else if (op=="To Bin") {
+                } else if (op=="deci to bin") {
                     let nums = inp.split(",");
                     for (let i = 0; i<nums.length; i++) {
                         nums[i] = Number(nums[i]);
                     }
                     result = decimalToBinary(nums);
-                } else if (op=="To Deci") {
+                } else if (op=="bin to deci") {
                     let bins = inp.split(",");
                     result = binaryToDecimal(bins); 
                 } else {
