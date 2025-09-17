@@ -135,3 +135,18 @@ function binaryToDecimal(bins) {
     }
     return nums.join(", ");
 }
+function addBinary(bins) {
+    let binSum = "";
+    let binBase = "";
+    let bits = 32;
+    for (let i = 0; i < bins.length; i++) {
+        bins[i] = bins[i].split('').reverse().join('');
+        for (let j = bits-1; j >= 0; j--) {
+            if (j>bins[i].length) {
+                bins[i] += "0";
+            }
+        }
+
+    }
+    return bins;
+}
