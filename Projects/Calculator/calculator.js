@@ -141,7 +141,7 @@ function addBinary(bins) {
     let bits = 32;
     for (let i = 0; i < bins.length; i++) {
         bins[i] = bins[i].split('').reverse().join('');
-        for (let j = bits-1; j >= 0; j--) {
+        for (let j = 0; j > bits; j++) {
             if (j>bins[i].length) {
                 bins[i] += "0";
             }
