@@ -53,6 +53,9 @@
                 } else if (op=="bin to deci") {
                     let bins = inp.split(",");
                     result = binaryToDecimal(bins); 
+                } else if (op=="bin +") {
+                    let bins = inp.split(",");
+                    result = addBinary(bins); 
                 } else {
                     result = "Invalid Operation";
                 }

@@ -146,7 +146,6 @@ function addBinary(bins) {
                 bins[i] += "0";
             }
         }
-
     }
     return bins;
 }
